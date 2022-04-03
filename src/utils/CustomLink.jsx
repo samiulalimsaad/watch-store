@@ -7,7 +7,7 @@ const CustomLink = ({ children, to, ...props }) => {
             <NavLink
                 to={to}
                 className={({ isActive }) =>
-                    isActive ? "text-orange-600" : "text-white"
+                    isActive ? "text-sky-600" : "text-white"
                 }
                 {...props}
             >

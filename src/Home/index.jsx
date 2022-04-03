@@ -1,18 +1,14 @@
 import React from "react";
-import Review from "./Review";
+import Review from "../Review/Review";
 
 const Home = () => {
     return (
         <>
-            <section className="container flex items-center justify-center p-20">
+            <section className="container flex items-center justify-center p-20 mt-20">
                 <div className="flex items-center justify-between">
                     <div className="">
-                        <h1 className="text-yellow-900 text-9xl">
-                            Watch{" "}
-                            <span className="font-extrabold text-orange-400">
-                                -
-                            </span>{" "}
-                            Store
+                        <h1 className="font-extrabold text-sky-700 text-9xl">
+                            Watch Store
                         </h1>
                         <h4 className="flex justify-center w-2/3 my-4 text-lg">
                             Watch can do what your other devices can’t because
