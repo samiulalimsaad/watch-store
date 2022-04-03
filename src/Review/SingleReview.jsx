@@ -22,7 +22,7 @@ const SingleReview = ({ name, image, description, rating, wide }) => {
                 <div className="flex">{stars}</div>
             </div>
             <p className="text-justify text-clip text-slate-700">
-                {description}
+                {wide ? description : description.substr(0, 400) + " ..."}
             </p>
         </div>
     );
