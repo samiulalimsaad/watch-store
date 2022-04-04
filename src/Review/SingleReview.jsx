@@ -8,8 +8,8 @@ const SingleReview = ({ name, image, description, rating, wide }) => {
     }
     return (
         <div
-            className={`p-10 my-10 space-y-4 border rounded-md border-slate-300 ${
-                wide ? "w-full sm:w-2/3" : "w-1/3"
+            className={`p-10 border rounded-md border-slate-300 w-full ${
+                wide ? "sm:w-2/3" : "sm:w-1/3"
             }`}
         >
             <div className="flex items-center justify-between gap-4">
@@ -26,7 +26,7 @@ const SingleReview = ({ name, image, description, rating, wide }) => {
                 </div>
             </div>
             <p
-                className="text-justify text-clip text-slate-700"
+                className="mt-8 text-justify text-clip text-slate-700"
                 title={wide ? "" : description}
             >
                 {wide ? description : description.substr(0, 400) + " ..."}

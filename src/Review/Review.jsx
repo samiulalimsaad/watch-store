@@ -8,12 +8,12 @@ const Review = () => {
     return (
         <div className="my-10">
             <h2 className="text-5xl text-center">Reviews(3)</h2>
-            <div className="flex gap-4 overflow-x-auto">
+            <div className="flex flex-wrap gap-4 my-4 space-y-4 overflow-x-auto sm:flex-nowrap">
                 {reviews.slice(0, 3).map((review) => (
                     <SingleReview key={review.id} {...review} />
                 ))}
             </div>
-            <div className="flex justify-center">
+            <div className="flex justify-center mt-4">
                 <Link
                     to="/reviews"
                     className="px-10 py-5 text-white bg-sky-600"
