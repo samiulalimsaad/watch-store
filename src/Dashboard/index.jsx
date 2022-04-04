@@ -27,9 +27,8 @@ const Dashboard = () => {
         axios
             .get("/data.json")
             .then((res) => setData(res.data))
-            .catch((e) => console.log(e));
+            .catch((e) => console.error(e));
     }, []);
-    console.log(data);
     const investment = data?.map((v) => v.investment);
     const revenue = data?.map((v) => v.revenue);
     return (

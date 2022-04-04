@@ -2,6 +2,9 @@
 
 Live Site Link: <https://saad-ph-assignment-9.netlify.app>
 
-Repo Link: <https://github.com/programming-hero-web-course-4/product-analysis-website-samiulalimsaad>
-
 ## About
+
+-   Made an Watch Store Website
+-   used react-router-dom to navigate one page to other without reloading page.
+-   used recharts to display different data visually with colorful and interactive figure
+-   used tailwind-css to style and responsive the website

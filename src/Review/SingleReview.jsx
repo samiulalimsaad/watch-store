@@ -14,7 +14,7 @@ const SingleReview = ({ name, image, description, rating, wide }) => {
         >
             <div className="flex items-center justify-between gap-4">
                 <div className="flex items-center w-full gap-4">
-                    <div className="w-full overflow-hidden rounded-lg sm:w-32">
+                    <div className="w-full h-auto overflow-hidden rounded-lg sm:w-32">
                         <img className="object-cover" src={image} alt="" />
                     </div>
                     <div className="flex flex-wrap items-center justify-between w-full sm:flex-nowrap">
