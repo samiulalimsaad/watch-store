@@ -9,19 +9,26 @@ const SingleReview = ({ name, image, description, rating, wide }) => {
     return (
         <div
             className={`p-10 my-10 space-y-4 border rounded-md border-slate-300 ${
-                wide ? "w-2/3" : "w-1/3"
+                wide ? "w-full sm:w-2/3" : "w-1/3"
             }`}
         >
             <div className="flex items-center justify-between gap-4">
-                <div className="flex items-center gap-4">
-                    <div className="w-32 overflow-hidden rounded-lg">
+                <div className="flex items-center w-full gap-4">
+                    <div className="w-full overflow-hidden rounded-lg sm:w-32">
                         <img className="object-cover" src={image} alt="" />
                     </div>
-                    <h3 className="text-2xl font-semibold">{name}</h3>
+                    <div className="flex flex-wrap items-center justify-between w-full sm:flex-nowrap">
+                        <h3 className="text-2xl font-semibold">{name}</h3>
+                        <div title={`${rating} star`} className="flex">
+                            {stars}
+                        </div>
+                    </div>
                 </div>
-                <div className="flex">{stars}</div>
             </div>
-            <p className="text-justify text-clip text-slate-700">
+            <p
+                className="text-justify text-clip text-slate-700"
+                title={wide ? "" : description}
+            >
                 {wide ? description : description.substr(0, 400) + " ..."}
             </p>
         </div>

@@ -5,7 +5,7 @@ import Review from "../Review/Review";
 const Home = () => {
     return (
         <>
-            <section className="container flex items-center justify-center p-20 mt-20">
+            <section className="container flex items-center justify-center mt-20 sm:p-20">
                 <div className="flex items-center justify-between">
                     <div className="">
                         <h1 className="font-extrabold duration-500 text-sky-700 text-9xl hover:text-sky-400">
