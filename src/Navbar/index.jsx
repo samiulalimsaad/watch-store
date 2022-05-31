@@ -6,7 +6,7 @@ const Navbar = () => (
         <CustomLink to="/">Home</CustomLink>
         <CustomLink to="/reviews">Review</CustomLink>
         <CustomLink to="/dashboard">Dashboard</CustomLink>
-        <CustomLink to="/blog">Blog</CustomLink>
+        {/* <CustomLink to="/blog">Blog</CustomLink> */}
     </nav>
 );
 

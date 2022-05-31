@@ -11,11 +11,11 @@ const Home = () => (
                         Watch Store
                     </h1>
                     <h4 className="flex justify-center my-4 text-lg sm:w-2/3">
-                        Watch can do what your other devices can’t because it’s
+                        Watch can do what your other devices can't because it's
                         on your wrist. When you wear it, you get a fitness
                         partner that measures all the ways you move, meaningful
                         health insights, and a connection to the people and
-                        things you care about most. And it’s always just a
+                        things you care about most. And it's always just a
                         glance away.
                     </h4>
                     <div className="flex justify-center sm:justify-start">
